@@ -1,0 +1,330 @@
+:root {
+    --black: #1e2020;
+    --gray: #282929;
+    --gold: #d2a90b;
+    --mont: 'Montserrat';
+    --product: "Product-sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: url(../images/header_img_bg.jpg) center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.header__nav {
+    background: var(--black);
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--product);
+    font-size: 26px;
+    text-decoration: none;
+    height: 34px;
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-image: 1 linear-gradient(133deg, white, var(--gold));
+}
+
+.logo_gold {
+    color: var(--gold);
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.header__link {
+    font-family: var(--product);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 70px;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.header__title {
+    font-family: var(--product);
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header__text {
+    font-family: var(--product);
+    font-size: 22px;
+    line-height: 27px;
+    text-align: justify;
+    color: white;
+}
+
+.history {
+    padding-top: 60px;
+    background: var(--gray);
+}
+
+.section-title {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: var(--product);
+    color: var(--gold);
+    font-size: 28px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title::before {
+    content: ' ';
+    height: 2px;
+    width: 53px;
+    background: white;
+    display: inline-block;
+    align-self: flex-end;
+    margin-bottom: 9px;
+}
+
+.section-title::after {
+    content: ' ';
+    height: 2px;
+    width: 53px;
+    background: white;
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.history__text {
+    text-align: justify;
+    font-family: var(--mont);
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.work__slider-prev {
+    display: flex;
+    align-items: center;
+    color: var(--gold);
+    font-size: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.work__slider-next {
+    display: flex;
+    align-items: center;
+    color: var(--gold);
+    font-size: 50px;
+    text-decoration: none;
+    justify-content: flex-end;
+    transition: 0.5s;
+}
+
+.work__slider-prev i::after,
+.work__slider-next i::after {
+    color: white;
+}
+
+.work__slider-prev:hover,
+.work__slider-next:hover {
+    font-size: 70px;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.work__slider-title {
+    font-family: var(--product);
+    color: var(--gold);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.work__slider-title_white {
+    color: white;
+}
+
+.work__slider-text {
+    color: white;
+    font-family: var(--mont);
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.work__slider {
+    background: var(--black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.works {
+    padding-top: 60px;
+    background: var(--gray);
+}
+
+.works__text {
+    font-family: var(--mont);
+    color: white;
+    font-size: 18px;
+}
+
+.works__link {
+    height: 38px;
+    padding: 0 30px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    font-family: var(--mont);
+    color: var(--black);
+    text-transform: uppercase;
+    background: white;
+    margin-bottom: 20px;
+}
+.works__link.active{
+    background: var(--black);
+    color: white;
+}
+.works__right{
+    padding: 20px 30px;
+    background: var(--black);
+    height: 100%;
+}
+.works__right-title{
+    font-size: 24px;
+    font-family: var(--product);
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+.works__right-text{
+    font-family: var(--mont);
+    line-height: 24px;
+    color: white;
+    text-align: justify;
+}
+.works__right-link{
+    height: 44px;
+    width: 169px;
+    border-radius: 22px;
+    background: var(--gold);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.works__right-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.abilities{
+    background: var(--gray);
+    padding-top: 60px;
+}
+.card-header{
+    padding: 0;
+}
+.abilities__button{
+    display: block;
+    padding: 20px 15px;
+    background: var(--gold);
+    font-family: var(--mont);
+    color: var(--gray);
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    text-align-last: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0;
+}
+.abilities__button.collapsed{
+    color: white;
+    background: var(--black);
+}
+.card{
+    border-radius: 0;
+    border: none;
+}
+.card-body{
+    padding: 16px 19px;
+    background: var(--black);
+    text-align: justify;
+    color: white;
+    font-family: var(--mont);
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px var(--gold) solid;
+}
+.abilities__text{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.abilities__image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--black);
+}
+.footer__list{
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.footer__link{
+    color: white;
+    text-transform: uppercase;
+    margin: 0 25px;
+    font-family: var(--product);
+    font-size: 20px;
+}
+.footer__link:hover{
+    text-decoration: none;
+    color: var(--gold);
+}
+.footer__contact-link{
+    color: white;
+    font-size: 20px;
+    font-family: var(--product);
+    margin:0 15px;
+}
+.footer__contact-link:hover{
+    text-decoration: none;
+    color: white;
+}
